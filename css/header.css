@@ -1,0 +1,63 @@
+header {
+  padding: 30px 0 50px;
+  background: url("../img/header-bg.svg") no-repeat center top;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 195px;
+  width: 100%;
+}
+.logo img {
+  width: 100%;
+}
+
+.link-instagramm {
+  width: 50px;
+  min-width: 50px;
+  padding: 13px;
+}
+.link-instagramm .svg-icon {
+  margin: 0;
+}
+
+.btn-callback {
+  padding: 10px 25px;
+}
+
+.header-bottom {
+  width: 100%;
+  margin: 34px 0 0;
+}
+
+.nav-menu {
+  width: 100%;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+.menu li {
+  margin: 0 60px 0 0;
+}
+.menu li:last-child {
+  margin: 0;
+}
+.menu li a {
+  color: #585858;
+}
+.menu li a:hover, .menu li a:focus, .menu li a.active {
+  color: #015B64;
+}

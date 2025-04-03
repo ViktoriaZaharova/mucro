@@ -1,0 +1,340 @@
+@import 'fonts'
+@import 'vars'
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+  color: $black
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+.text-decoration
+  text-decoration: underline  
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  width: fit-content
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0 15px
+  box-sizing: border-box
+  font-family: $default-font
+  border: none
+  border-radius: 10px
+  width: 100%
+  height: 54px
+  background: transparent
+  color: #000
+  font-size: 15px
+  cursor: pointer
+  &::placeholder
+    color: #595959
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+input[type="radio"], input[type="checkbox"]
+  width: auto
+  height: auto
+  appearance: auto
+  margin: 0 5px 0 0
+  display: inline
+
+label
+  display: block
+  width: 100%
+  margin: 0 0 13px
+
+  &:last-child
+    margin: 0
+
+textarea
+  resize: none
+  padding: 12px 17px
+  height: 103px
+
+.btn-group
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  .btn
+    margin: 0 10px 0 0
+    border-radius: 12px
+    flex: none
+    &:last-child
+      margin: 0
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn.dropdown-toggle-split:first-child, .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+.btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn
+  border-radius: 12px
+
+button, .btn
+  outline: none
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+  font-family: $default-font
+  padding: 0
+  margin: 0
+  border: none
+  border-radius: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 13px 20px
+  font-size: 16px
+  font-weight: bold
+  height: 50px
+  border-radius: 12px
+  transition: 0.3s ease
+  .svg-icon
+    width: 24px
+    height: 24px
+    min-width: 24px
+    margin: 0 5px 0 0
+    @include d-flex
+    &.fill-none
+      fill: none
+
+.btn-accent
+  color: #fff
+  background: linear-gradient(135deg, rgba(1,91,100,1) 0%,rgba(0,135,149,1) 100%)
+  &:hover, &:focus, &:active, &.active
+    color: #fff
+    background: $hover      
+
+.btn-green-light
+  background: #EDFBF7
+  color: $black
+  .svg-icon
+    fill: $accent
+    &.fill-none
+      stroke: $accent
+  &:hover, &:focus, &:active, &.active
+    background: $accent
+    color: #fff
+    .svg-icon
+      fill: #fff
+      &.fill-none
+        fill: none
+        stroke: #fff
+
+.font-600
+  font-weight: 600        
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+strong, b
+  font-weight: bold
+  display: inline-block
+
+ul, ol
+  padding: 0 0 0 20px
+
+.my-ul
+  list-style: none
+  padding: 0
+
+.list-dots
+  list-style-type: disc
+
+
+
+.container
+  max-width: 1220px
+  padding: 0 10px
+
+.row
+  margin: 0 -10px
+  >*
+    padding: 0 10px
+
+.mb-20
+  margin-bottom: 20px
+
+.mb-40
+  margin-bottom: 40px    
+
+h1, h2, .h1, .h2
+  margin: 0 0 40px
+  width: 100%
+  font-weight: 800
+  font-size: 48px
+
+a.color-accent
+  color: $accent
+  &:hover, &:focus
+    color: $hover  
+
+.nav-breadcrumb
+  width: 100%
+  margin: 0 0 15px  
+
+.breadcrumb
+  margin: 0
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-size: 12px
+  font-weight: 600
+  color: #2D2D2C
+  li
+    a
+      display: flex
+      align-items: center
+      color: $accent
+      &:after 
+        content: '—'
+        margin: 0 5px
+      &:hover, &:focus
+        color: $hover  
+
+.breadcrumb-item+.breadcrumb-item::before
+  display: none
+
+.breadcrumb-item+.breadcrumb-item
+  padding: 0 
+
+.nav-pagination
+  width: 100%
+  margin: 20px 0 0
+
+.pagination
+  align-items: center
+  justify-content: center
+  font-size: 16px
+  font-weight: bold
+  li
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+      .page-link
+        border-radius: 12px
+    &:first-child
+      .page-link
+        border-radius: 12px    
+    a
+      width: 50px
+      height: 50px
+      min-width: 50px
+      @include d-flex
+      background: #fff
+      border-radius: 12px
+      border: none
+      padding: 13px
+      color: #015B64
+      fill: #015B64
+      &:hover, &.active
+        background: $hover
+        color: #fff
+        fill: #fff
+
+
+
+.page
+  padding: 250px 0 203px
+  margin: -250px 0 0  
+
+.slick-slider
+  width: 100%
+
+.slick-slide
+  outline: none
+
+//checkbox my
+.label-checkbox
+  position: relative
+  display: flex
+  align-items: flex-start
+  color: rgba(255, 255, 255, 0.5)
+  font-size: 14px
+  margin: 15px 0 0
+  line-height: 1.14
+
+.inp-check
+  display: none
+
+.checkbox-custom
+  margin: 0 12px 0 0
+  position: relative
+  border-radius: 6px
+  background-color: #fff
+  width: 16px
+  height: 16px
+  min-width: 16px
+  cursor: pointer
+
+.inp-check:checked ~ .checkbox-custom
+  background: #fff url("../img/check-black.svg") no-repeat center
+  background-size: 8px
+//checkbox my end

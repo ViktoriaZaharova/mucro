@@ -1,0 +1,442 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Mulish";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Mulish/Mulish-Regular.eot");
+  src: url("../fonts/Mulish/Mulish-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Mulish/Mulish-Regular.woff") format("woff"), url("../fonts/Mulish/Mulish-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mulish";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Mulish/Mulish-Medium.eot");
+  src: url("../fonts/Mulish/Mulish-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Mulish/Mulish-Medium.woff") format("woff"), url("../fonts/Mulish/Mulish-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mulish";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Mulish/Mulish-SemiBold.eot");
+  src: url("../fonts/Mulish/Mulish-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mulish/Mulish-SemiBold.woff") format("woff"), url("../fonts/Mulish/Mulish-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Mulish/Mulish-Bold.eot");
+  src: url("../fonts/Mulish/Mulish-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mulish/Mulish-Bold.woff") format("woff"), url("../fonts/Mulish/Mulish-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mulish";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/Mulish/Mulish-ExtraBold.eot");
+  src: url("../fonts/Mulish/Mulish-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Mulish/Mulish-ExtraBold.woff") format("woff"), url("../fonts/Mulish/Mulish-ExtraBold.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: normal;
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  background: #fff;
+  color: #2D2D2C;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-decoration {
+  text-decoration: underline;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  transition: 0.3s ease;
+  outline: none;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+input, textarea, select {
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0 15px;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 54px;
+  background: transparent;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+}
+input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  color: #595959;
+}
+input::placeholder, textarea::placeholder, select::placeholder {
+  color: #595959;
+}
+input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input[type=radio], input[type=checkbox] {
+  width: auto;
+  height: auto;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  margin: 0 5px 0 0;
+  display: inline;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 0 0 13px;
+}
+label:last-child {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+  padding: 12px 17px;
+  height: 103px;
+}
+
+.btn-group {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.btn-group .btn {
+  margin: 0 10px 0 0;
+  border-radius: 12px;
+  flex: none;
+}
+.btn-group .btn:last-child {
+  margin: 0;
+}
+
+.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn.dropdown-toggle-split:first-child, .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn {
+  border-radius: 12px;
+}
+
+button, .btn {
+  outline: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: none;
+  font-family: "Mulish", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+button:hover, button:focus, .btn:hover, .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 13px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+.btn .svg-icon {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  margin: 0 5px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn .svg-icon.fill-none {
+  fill: none;
+}
+
+.btn-accent {
+  color: #fff;
+  background: linear-gradient(135deg, rgb(1, 91, 100) 0%, rgb(0, 135, 149) 100%);
+}
+.btn-accent:hover, .btn-accent:focus, .btn-accent:active, .btn-accent.active {
+  color: #fff;
+  background: #5D2C3F;
+}
+
+.btn-green-light {
+  background: #EDFBF7;
+  color: #2D2D2C;
+}
+.btn-green-light .svg-icon {
+  fill: #015B64;
+}
+.btn-green-light .svg-icon.fill-none {
+  stroke: #015B64;
+}
+.btn-green-light:hover, .btn-green-light:focus, .btn-green-light:active, .btn-green-light.active {
+  background: #015B64;
+  color: #fff;
+}
+.btn-green-light:hover .svg-icon, .btn-green-light:focus .svg-icon, .btn-green-light:active .svg-icon, .btn-green-light.active .svg-icon {
+  fill: #fff;
+}
+.btn-green-light:hover .svg-icon.fill-none, .btn-green-light:focus .svg-icon.fill-none, .btn-green-light:active .svg-icon.fill-none, .btn-green-light.active .svg-icon.fill-none {
+  fill: none;
+  stroke: #fff;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.svg-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+strong, b {
+  font-weight: bold;
+  display: inline-block;
+}
+
+ul, ol {
+  padding: 0 0 0 20px;
+}
+
+.my-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-dots {
+  list-style-type: disc;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -10px;
+}
+.row > * {
+  padding: 0 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+h1, h2, .h1, .h2 {
+  margin: 0 0 40px;
+  width: 100%;
+  font-weight: 800;
+  font-size: 48px;
+}
+
+a.color-accent {
+  color: #015B64;
+}
+a.color-accent:hover, a.color-accent:focus {
+  color: #5D2C3F;
+}
+
+.nav-breadcrumb {
+  width: 100%;
+  margin: 0 0 15px;
+}
+
+.breadcrumb {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2D2D2C;
+}
+.breadcrumb li a {
+  display: flex;
+  align-items: center;
+  color: #015B64;
+}
+.breadcrumb li a:after {
+  content: "—";
+  margin: 0 5px;
+}
+.breadcrumb li a:hover, .breadcrumb li a:focus {
+  color: #5D2C3F;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: none;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding: 0;
+}
+
+.nav-pagination {
+  width: 100%;
+  margin: 20px 0 0;
+}
+
+.pagination {
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.pagination li {
+  margin: 0 10px 0 0;
+}
+.pagination li:last-child {
+  margin: 0;
+}
+.pagination li:last-child .page-link {
+  border-radius: 12px;
+}
+.pagination li:first-child .page-link {
+  border-radius: 12px;
+}
+.pagination li a {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  border: none;
+  padding: 13px;
+  color: #015B64;
+  fill: #015B64;
+}
+.pagination li a:hover, .pagination li a.active {
+  background: #5D2C3F;
+  color: #fff;
+  fill: #fff;
+}
+
+.page {
+  padding: 250px 0 203px;
+  margin: -250px 0 0;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.label-checkbox {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin: 15px 0 0;
+  line-height: 1.14;
+}
+
+.inp-check {
+  display: none;
+}
+
+.checkbox-custom {
+  margin: 0 12px 0 0;
+  position: relative;
+  border-radius: 6px;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  cursor: pointer;
+}
+
+.inp-check:checked ~ .checkbox-custom {
+  background: #fff url("../img/check-black.svg") no-repeat center;
+  background-size: 8px;
+}
