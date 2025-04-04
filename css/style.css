@@ -96,6 +96,10 @@ img {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-decoration {
   text-decoration: underline;
 }
@@ -398,9 +402,53 @@ a.color-accent:hover, a.color-accent:focus {
   fill: #fff;
 }
 
+.nav-pagination-article {
+  margin: 40px 0 0;
+}
+
+.pagination-article li a {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 13px;
+}
+.pagination-article li a svg {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+}
+.pagination-article li a span {
+  margin: 0 0 0 5px;
+}
+.pagination-article li:last-child a span {
+  margin: 0 5px 0 0;
+}
+
+.box-text p {
+  margin: 0 0 20px;
+}
+.box-text p:last-child {
+  margin: 0;
+}
+
 .page {
   padding: 250px 0 203px;
   margin: -250px 0 0;
+}
+
+.block-title-decor {
+  position: relative;
+  z-index: 1;
+}
+.block-title-decor::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 185px;
+  height: 180px;
+  top: 0;
+  right: -100px;
+  background: url("../img/decor1.svg") no-repeat center;
+  background-size: cover;
 }
 
 .slick-slider {
@@ -409,6 +457,33 @@ a.color-accent:hover, a.color-accent:focus {
 
 .slick-slide {
   outline: none;
+}
+
+.slider-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.slick-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F6FFFD;
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  margin: 0 10px 0 0;
+  padding: 13px;
+  fill: #015B64;
+}
+.slick-arrow:last-child {
+  margin: 0;
+}
+.slick-arrow:hover, .slick-arrow:focus {
+  background: #5D2C3F;
+  fill: #fff;
 }
 
 .label-checkbox {

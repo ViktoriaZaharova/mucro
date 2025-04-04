@@ -57,6 +57,9 @@ img
 .text-center
   text-align: center
 
+.text-right
+  text-align: right  
+
 .text-decoration
   text-decoration: underline  
 
@@ -299,17 +302,75 @@ a.color-accent
         color: #fff
         fill: #fff
 
+.nav-pagination-article
+  margin: 40px 0 0        
 
+.pagination-article
+  li
+    a
+      width: fit-content
+      padding: 13px
+      svg
+        width: 24px
+        height: 24px
+        min-width: 24px
+      span
+        margin: 0 0 0 5px
+    &:last-child
+      a
+        span
+          margin: 0 5px 0 0            
+
+.box-text
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
 
 .page
   padding: 250px 0 203px
-  margin: -250px 0 0  
+  margin: -250px 0 0 
+
+.block-title-decor
+  position: relative
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    z-index: -1
+    width: 185px
+    height: 180px
+    top: 0
+    right: -100px
+    background: url('../img/decor1.svg') no-repeat center
+    background-size: cover   
 
 .slick-slider
   width: 100%
 
 .slick-slide
   outline: none
+
+.slider-nav
+  display: flex
+  align-items: flex-start
+  justify-content: flex-end
+
+.slick-arrow
+  @include d-flex
+  background: #F6FFFD
+  border-radius: 12px
+  width: 50px
+  height: 50px
+  min-width: 50px
+  margin: 0 10px 0 0
+  padding: 13px
+  fill: #015B64
+  &:last-child
+    margin: 0    
+  &:hover, &:focus
+    background: $hover
+    fill: #fff  
 
 //checkbox my
 .label-checkbox
