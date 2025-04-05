@@ -1,3 +1,8 @@
+.page-home {
+  background: url("../img/home-bg.svg") no-repeat center top;
+  background-size: cover;
+}
+
 .page-news {
   background: url("../img/news-bg.svg") no-repeat center top;
   background-size: cover;

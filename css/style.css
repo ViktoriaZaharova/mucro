@@ -553,6 +553,11 @@ a.color-accent:hover, a.color-accent:focus {
   background-size: cover;
 }
 
+.block-title-decor2::before {
+  right: auto;
+  left: -100px;
+}
+
 .slick-slider {
   width: 100%;
 }
