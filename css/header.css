@@ -5,6 +5,12 @@ header {
   position: relative;
   z-index: 1;
 }
+header .btn-group .btn {
+  padding: 13px 20px;
+}
+header .btn-group .btn-callback {
+  padding: 13px 25px;
+}
 
 .logo {
   display: flex;

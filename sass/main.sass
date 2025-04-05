@@ -219,3 +219,57 @@
     width: 100%
     height: 100%
     border-radius: 14px     
+
+// catalog page
+.page-catalog
+  background: url('../img/catalog-bg.svg') no-repeat center top
+  background-size: cover
+  padding-bottom: 550px
+  margin: -250px 0 -530px
+
+  
+.product-card
+  width: 100%
+  height: 100%
+  background: #EDFBF7
+  border-radius: 14px  
+  padding: 70px 20px 40px
+  position: relative
+  z-index: 1
+  &__link
+    @include d-flex
+    margin: 0 0 0 auto
+    position: absolute
+    right: 10px
+    top: 10px
+    width: 50px
+    height: 50px
+    min-width: 50px
+    background: #fff
+    stroke: $accent
+    padding: 13px
+    border-radius: 12px
+    &:hover, &:focus
+      background: $hover
+      stroke: #fff
+  &__img
+    @include d-flex
+    max-width: 165px
+    width: 100%
+  &__title
+    font-size: 24px
+    font-weight: bold
+    color: #5D2C3F
+    &:hover
+      color: $accent  
+
+.callback-section
+  padding: 250px 0 165px
+  background: url('../img/callback-bg.svg') no-repeat center top
+  background-size: cover  
+  h2
+    font-size: 36px
+    margin: 0 0 20px
+  .form-callback
+    max-width: 387px
+    width: 100%  
