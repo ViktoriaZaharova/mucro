@@ -331,7 +331,6 @@
 .page-about {
   background: url("../img/about-bg.svg") no-repeat center top;
   background-size: cover;
-  padding-bottom: 260px;
 }
 
 .about-box {
@@ -400,8 +399,8 @@
   width: 100%;
 }
 
-.certificates-section h2 {
-  font-size: 36px;
+.certificates-section {
+  margin: 0 0 55px;
 }
 
 .certificates-slider .slick-slide {
@@ -456,4 +455,72 @@
   bottom: 0;
   padding: 20px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.page-service {
+  background: url("../img/service-bg.svg") no-repeat center top;
+  background-size: cover;
+}
+.page-service .block-title-decor {
+  padding: 9px 0 0;
+}
+
+.service-text .box-text {
+  line-height: 150%;
+  color: #585858;
+}
+.service-text ul li {
+  margin: 0 0 10px;
+}
+.service-text ul li:last-child {
+  margin: 0;
+}
+.service-text h3 {
+  margin: 0 0 10px;
+  color: #015B64;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.service-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.service-img img {
+  width: 100%;
+}
+
+.service-section {
+  margin: 90px 0 0;
+}
+
+.federation-license {
+  margin: 60px 0;
+}
+.federation-license .block-title-decor {
+  padding: 40px 0 0;
+}
+.federation-license .block-title-decor::before {
+  right: auto;
+  left: -100px;
+}
+
+.license-card {
+  background: url("../img/certificate.png") no-repeat center;
+  background-size: cover;
+}
+
+.callback-section-row {
+  padding: 0;
+  margin: 100px 0 0;
+}
+.callback-section-row h2 {
+  margin: 0 0 40px;
+}
+.callback-section-row .form-callback {
+  max-width: none;
 }

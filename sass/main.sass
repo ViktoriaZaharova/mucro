@@ -1,9 +1,12 @@
 @import "vars"
 
+// home page
+.page-home
+
 // news page
 .page-news
   background: url('../img/news-bg.svg') no-repeat center top
-  background-size: cover  
+  background-size: cover
 
 .news-card
   width: 100%
@@ -23,7 +26,7 @@
     background: #fff
   &__body
     width: 100%
-    height: calc( 100% - 340px ) 
+    height: calc( 100% - 340px )
     padding: 20px
     display: flex
     flex-direction: column
@@ -36,7 +39,7 @@
   .box-text
     margin: 10px 0
   &__footer
-    margin: auto 0 0 
+    margin: auto 0 0
     width: 100%
     display: flex
     align-items: center
@@ -51,7 +54,7 @@
     min-width: 50px
     height: 50px
     border-radius: 12px
-    background: #fff 
+    background: #fff
     padding: 13px
     stroke: $accent
     &:hover
@@ -61,7 +64,7 @@
 // article page
 .page-article
   background: url('../img/article-bg.svg') no-repeat center top
-  background-size: cover 
+  background-size: cover
   padding-bottom: 75px
   &__text
     color: #585858
@@ -71,12 +74,11 @@
     height: 530px
     @include d-flex
     border-radius: 14px
-    background: #F1F2F2  
+    background: #F1F2F2
     overflow: hidden
 
 .gallery-section
-  margin: 100px 0 80px 
-
+  margin: 100px 0 80px
 
 .gallery-slider
   .slick-list
@@ -98,7 +100,7 @@
   width: 100%
   height: 530px
   @include d-flex
-  
+
   position: relative
   z-index: 1
   background: #EDFBF7
@@ -121,11 +123,11 @@
     position: absolute
     top: 110px
     left: -103px
-    z-index: -2  
+    z-index: -2
     width: 185px
     height: 180px
     background: url('../img/decor1.svg') no-repeat center
-    background-size: cover 
+    background-size: cover
   &__link
     position: absolute
     z-index: 2
@@ -157,16 +159,13 @@
     z-index: 1
     color: #fff
     display: block
-    padding: 20px    
-      
-
-
+    padding: 20px
 
 // contacts page
 .page-contacts
   background: url('../img/contacts-bg.svg') no-repeat center top
   background-size: cover
-  
+
 .contacts-box
   width: 100%
   height: 100%
@@ -201,23 +200,23 @@
     display: block
     font-size: 14px
     line-height: 150%
-    margin: 5px 0 0  
+    margin: 5px 0 0
   .link-page
     margin: auto 0 0
     font-weight: 500
     font-size: 14px
-    color: $accent    
+    color: $accent
 
 .map-wrapper
   @include d-flex
   overflow: hidden
   width: 100%
   height: 500px
-  border-radius: 14px    
+  border-radius: 14px
   iframe
     width: 100%
     height: 100%
-    border-radius: 14px     
+    border-radius: 14px
 
 // catalog page
 .page-catalog
@@ -226,12 +225,11 @@
   padding-bottom: 550px
   margin: -250px 0 -530px
 
-  
 .product-card
   width: 100%
   height: 100%
   background: #EDFBF7
-  border-radius: 14px  
+  border-radius: 14px
   padding: 70px 20px 40px
   position: relative
   z-index: 1
@@ -260,24 +258,23 @@
     font-weight: bold
     color: #5D2C3F
     &:hover
-      color: $accent  
+      color: $accent
 
 .callback-section
   padding: 250px 0 165px
   background: url('../img/callback-bg.svg') no-repeat center top
-  background-size: cover  
+  background-size: cover
   h2
     font-size: 36px
     margin: 0 0 20px
   .form-callback
     max-width: 387px
-    width: 100%  
+    width: 100%
 
 // about page
 .page-about
   background: url('../img/about-bg.svg') no-repeat center top
   background-size: cover
-  padding-bottom: 260px
 
 .about-box
   text-align: center
@@ -300,7 +297,7 @@
     text-align: center
     color: $accent
   &__text
-    line-height: 150%  
+    line-height: 150%
 
 .about-information
   margin: 120px 0 100px
@@ -328,24 +325,22 @@
       border: 3px solid #7DC0B9
       background: #fff
 
-
 .logo-img
   margin: 54px 0 0 auto
   max-width: 270px
   width: 100%
   img
-    width: 100%  
+    width: 100%
 
 .certificates-section
-  h2
-    font-size: 36px
+  margin: 0 0 55px
 
 .certificates-slider
   .slick-slide
     margin: 0 20px 0 0
   .slick-list
-    margin: 0 -20px 0 0      
-      
+    margin: 0 -20px 0 0
+
 .certificate-card
   width: 100%
   height: 403px
@@ -386,3 +381,56 @@
     bottom: 0
     padding: 20px
     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,0.6) 100%)
+
+// page service
+.page-service
+  background: url('../img/service-bg.svg') no-repeat center top
+  background-size: cover
+  .block-title-decor
+    padding: 9px 0 0
+
+.service-text
+  .box-text
+    line-height: 150%
+    color: #585858
+  ul
+    li
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+  h3
+    margin: 0 0 10px
+    color: $accent
+    font-size: 20px
+    font-weight: 600        
+
+.service-img
+  width: 100%
+  @include d-flex
+  border-radius: 14px
+  overflow: hidden
+  img
+    width: 100%
+
+.service-section
+  margin: 90px 0 0    
+
+.federation-license
+  margin: 60px 0
+  .block-title-decor
+    padding: 40px 0 0
+    &::before
+      right: auto
+      left: -100px  
+
+.license-card
+  background: url('../img/certificate.png') no-repeat center
+  background-size: cover     
+
+.callback-section-row
+  padding: 0
+  margin: 100px 0 0  
+  h2
+    margin: 0 0 40px
+  .form-callback
+    max-width: none  
