@@ -511,6 +511,7 @@ a.color-accent:hover, a.color-accent:focus {
 .block-title-decor {
   position: relative;
   z-index: 1;
+  padding: 40px 0 0;
 }
 .block-title-decor::before {
   content: "";
