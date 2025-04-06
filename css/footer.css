@@ -29,3 +29,56 @@ footer {
   width: 100%;
   margin: 35px 0 0;
 }
+
+.modal-dialog {
+  max-width: 590px;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 14px;
+  background: #e4f9f3;
+}
+
+.modal-header {
+  padding: 40px 40px 30px;
+  border: none;
+}
+.modal-header .btn-close {
+  position: absolute;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  z-index: 1;
+  right: 5px;
+  top: 5px;
+  transition: 0.3s ease;
+  border-radius: 12px;
+  opacity: 1;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-header .btn-close svg {
+  width: 22px;
+  height: 22px;
+  stroke: rgb(45, 45, 44);
+  stroke-width: 2px;
+}
+.modal-header .btn-close:hover {
+  background: #5D2C3F;
+}
+.modal-header .btn-close:hover svg {
+  stroke: #fff;
+}
+
+.modal-title {
+  font-size: 28px;
+  color: #2d2d2c;
+}
+
+.modal-body {
+  padding: 0 40px 40px;
+}

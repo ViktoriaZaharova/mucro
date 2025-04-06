@@ -1,6 +1,123 @@
 .page-home {
   background: url("../img/home-bg.svg") no-repeat center top;
   background-size: cover;
+  padding: 120px 0 220px;
+  margin: -130px 0 0;
+}
+.page-home h1 {
+  margin: 0;
+}
+
+.page-home-section {
+  color: #fff;
+}
+.page-home-section .block-title-decor {
+  padding: 0;
+}
+.page-home-section .block-title-decor::before {
+  background: url("../img/decor2.svg") no-repeat center;
+  background-size: cover;
+  top: -175px;
+  left: -184px;
+}
+
+.home-image {
+  width: 100%;
+  max-width: 692px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-image img {
+  width: 100%;
+}
+
+.home-about-section {
+  margin: 195px 0 230px;
+}
+.home-about-section .block-title-decor {
+  padding: 0;
+}
+.home-about-section h2 {
+  color: #fff;
+  margin: 0 0 16px;
+  font-size: 156px;
+  line-height: normal;
+}
+.home-about-section .box-text {
+  font-weight: 800;
+  font-size: 23px;
+}
+.home-about-section .box-text h3 {
+  font-size: 28px;
+  margin: 60px 0 0;
+}
+
+.products-slider .slick-list {
+  margin: 0 0 0 -20px;
+}
+.products-slider .slick-slide {
+  margin: 0 0 0 20px;
+}
+.products-slider__nav {
+  margin: 224px 0 0;
+  justify-content: flex-start;
+}
+
+.news-section {
+  margin: 335px 0 220px;
+}
+.news-section .block-title-decor {
+  padding: 80px 0 0;
+}
+
+.news-slider__nav {
+  justify-content: flex-start;
+  margin: 70px 0 0;
+}
+
+.news-box {
+  width: 100%;
+  min-height: 386px;
+  height: 100%;
+  background: #EDFBF7;
+  border-radius: 14px;
+  padding: 30px 20px 20px;
+  position: relative;
+  z-index: 1;
+}
+.news-box__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 15px;
+  color: #5D2C3F;
+}
+.news-box__title:hover {
+  color: #015B64;
+}
+.news-box .box-text {
+  color: #585858;
+}
+.news-box__link {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  bottom: 10px;
+  right: 10px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  stroke: #015B64;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s ease;
+}
+.news-box__link:hover {
+  stroke: #fff;
+  background: #5D2C3F;
 }
 
 .page-news {
@@ -405,7 +522,7 @@
 }
 
 .certificates-section {
-  margin: 0 0 55px;
+  margin: 230px 0 40px;
 }
 
 .certificates-slider .slick-slide {

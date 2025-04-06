@@ -4,6 +4,100 @@
 .page-home
   background: url('../img/home-bg.svg') no-repeat center top
   background-size: cover
+  padding: 120px 0 220px
+  margin: -130px 0 0
+  h1
+    margin: 0
+
+.page-home-section
+  color: #fff
+  .block-title-decor
+    padding: 0
+    &::before
+      background: url('../img/decor2.svg') no-repeat center
+      background-size: cover
+      top: -175px
+      left: -184px
+
+.home-image
+  width: 100%
+  max-width: 692px
+  @include d-flex
+  img
+    width: 100%
+
+.home-about-section
+  margin: 195px 0 230px
+  .block-title-decor
+    padding: 0
+  h2
+    color: #fff
+    margin: 0 0 16px
+    font-size: 156px
+    line-height: normal
+
+  .box-text
+    font-weight: 800
+    font-size: 23px
+    h3
+      font-size: 28px
+      margin: 60px 0 0
+
+
+.products-slider
+  .slick-list
+    margin: 0 0 0 -20px
+  .slick-slide
+    margin: 0 0 0 20px
+  &__nav
+    margin: 224px 0 0
+    justify-content: flex-start
+
+.news-section
+  margin: 335px 0 220px
+  .block-title-decor
+    padding: 80px 0 0
+
+.news-slider
+  &__nav
+    justify-content: flex-start
+    margin: 70px 0 0
+
+.news-box
+  width: 100%
+  min-height: 386px
+  height: 100%
+  background: #EDFBF7
+  border-radius: 14px
+  padding: 30px 20px 20px
+  position: relative
+  z-index: 1
+  &__title
+    font-size: 20px
+    font-weight: bold
+    margin: 0 0 15px
+    color: $hover
+    &:hover
+      color: $accent
+  .box-text
+    color: #585858
+  &__link
+    position: absolute
+    z-index: 2
+    cursor: pointer
+    bottom: 10px
+    right: 10px
+    background: #fff
+    border-radius: 12px
+    padding: 13px
+    @include d-flex
+    stroke: $accent
+    width: 50px
+    height: 50px
+    transition: .3s ease
+    &:hover
+      stroke: #fff
+      background: $hover
 
 // news page
 .page-news
@@ -305,7 +399,7 @@
   margin: 120px 0 100px
   .block-title-decor
     &::before
-      right: 0 
+      right: 0
       top: 0
   &__text
     width: 100%
@@ -335,8 +429,8 @@
     width: 100%
 
 .certificates-section
-  margin: 0 0 55px
-
+  margin: 230px 0 40px
+ 
 .certificates-slider
   .slick-slide
     margin: 0 20px 0 0
@@ -404,7 +498,7 @@
     margin: 0 0 10px
     color: $accent
     font-size: 20px
-    font-weight: 600        
+    font-weight: 600
 
 .service-img
   width: 100%
@@ -415,7 +509,7 @@
     width: 100%
 
 .service-section
-  margin: 90px 0 0    
+  margin: 90px 0 0
 
 .federation-license
   margin: 60px 0
@@ -423,18 +517,20 @@
     padding: 40px 0 0
     &::before
       right: auto
-      left: -100px  
+      left: -100px
 
 .license-card
   background: url('../img/certificate.png') no-repeat center
-  background-size: cover     
+  background-size: cover
 
 .callback-section-row
   padding: 0
-  margin: 100px 0 0  
+  margin: 100px 0 0
   h2
     margin: 0 0 40px
   .form-callback
-    max-width: none 
+    max-width: none
 
 
+// page product
+    
